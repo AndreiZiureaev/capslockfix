@@ -1,6 +1,6 @@
 # A Linux driver that flashes the CapsLock LED after every system wake
 
-It's a workaround for CapsLock being on when waking after suspend on Ubuntu. There are probably much better ways of doing this un userspace, but I wanted to make some Linux drivers...
+It's a workaround for CapsLock being on when waking after suspend on Ubuntu. There are probably much better ways of doing this in userspace, but I wanted to write some Linux drivers...
 
 ## Installing
 
