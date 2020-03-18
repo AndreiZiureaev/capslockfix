@@ -1,7 +1,7 @@
 /**
  * When Ubuntu unsuspends, the CapsLock LED is always on, even though CapsLock itself is off.
  * This "fixes" it by flashing the LED a few times every time the system wakes up.
- * The LED's behavior is extremely strange after a suspend, but flashing it fast 11 times seems to do the job.
+ * The LED's behavior is extremely strange after a suspend, but flashing it seems to do the job.
  */
 
 #include <linux/module.h>
