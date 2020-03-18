@@ -12,10 +12,10 @@ MODULE_DESCRIPTION("A workaround for CapsLock being on when waking after suspend
 MODULE_AUTHOR("Andrei Ziureaev");
 MODULE_LICENSE("GPL");
 
-#define DELAY HZ/2
+#define DELAY HZ/5
 #define ALL_LEDS_ON 0x07
 #define RESTORE_LEDS 0xFF
-#define MAX_SPAM 11
+#define MAX_SPAM 55
 
 static struct timer_list my_timer;
 static char ledstatus = 0;
