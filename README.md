@@ -26,7 +26,7 @@ sudo ldclf.sh
 `chmod` allows root to execute `ldclf.sh`.
 
 `ldclf.sh` compiles and installs the module, so that the module is loaded at every boot.
-`ldclf.sh` needs to be run every time the kernel is upgraded.
+`sudo ldclf.sh` needs to be run every time the kernel is upgraded.
 It recompiles the module for the current kernel and places the compiled module in the appropriate folder (among other things).
 
 ## Uninstalling
@@ -37,5 +37,3 @@ sudo rm /lib/modules/$(uname -r)/kernel/drivers/leds/capslockfix.ko
 ```
 
 Remove the `capslockfix` line from `/etc/modules`.
-
-Maybe run `sudo depmod`.
