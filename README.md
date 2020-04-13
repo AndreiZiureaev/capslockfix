@@ -5,18 +5,18 @@ It's a workaround for CapsLock being on when waking after suspend on Ubuntu. The
 ## Installing
 1. Download the source code.
 ```
-$ git clone https://github.com/AndreiZiureaev/capslockfix.git
-$ cd capslockfix
+git clone https://github.com/AndreiZiureaev/capslockfix.git
+cd capslockfix
 ```
 
 2. Read all of it to make sure it's not malware lol.
 
 3. Install and run `ldclf.sh`.
 ```
-$ sed -i "s|SRC_LOCATION=.*|SRC_LOCATION=$(pwd)|" ldclf.sh
-$ sudo cp ldclf.sh /usr/local/bin/
-$ sudo chmod u+x /usr/local/bin/ldclf.sh
-$ sudo ldclf.sh
+sed -i "s|SRC_LOCATION=.*|SRC_LOCATION=$(pwd)|" ldclf.sh
+sudo cp ldclf.sh /usr/local/bin/
+sudo chmod u+x /usr/local/bin/ldclf.sh
+sudo ldclf.sh
 ```
 
 `sed` adds the location of the source code to `ldclf.sh`.
@@ -31,9 +31,9 @@ It recompiles the module for the current kernel and places the compiled module i
 
 ## Uninstalling
 ```
-$ sudo rmmod capslockfix
-$ sudo rm /usr/local/bin/ldclf.sh
-$ sudo rm /lib/modules/$(uname -r)/kernel/drivers/leds/capslockfix.ko
+sudo rmmod capslockfix
+sudo rm /usr/local/bin/ldclf.sh
+sudo rm /lib/modules/$(uname -r)/kernel/drivers/leds/capslockfix.ko
 ```
 
 Remove the `capslockfix` line from `/etc/modules`.
